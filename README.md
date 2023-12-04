@@ -3,7 +3,7 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/DhananjayPorwal/Portfolio)
 ![GitHub stars](https://img.shields.io/github/stars/DhananjayPorwal/Portfolio?style=social)
 ![GitHub forks](https://img.shields.io/github/forks/DhananjayPorwal/Portfolio?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/codewithsadee_?style=social)](https://twitter.com/intent/follow?screen_name=codewithsadee_)
+[![Twitter Follow](https://img.shields.io/twitter/follow/dhananjayindia7?style=social)](https://twitter.com/intent/follow?screen_name=dhananjayindia7)
 [![YouTube Video Views](https://img.shields.io/youtube/views/SoxmIlgf2zM?style=social)](https://youtu.be/SoxmIlgf2zM)
 
 vCard is a fully responsive personal portfolio website, responsive for all devices, built using HTML, CSS, and JavaScript.
