@@ -56,12 +56,12 @@ downloadButton.removeAttribute("disabled");
 // Add an event listener to handle the download action
 downloadButton.addEventListener("click", function () {
   // Replace 'resume_link.pdf' with the actual link to your resume file
-  const resumeUrl = "DhananjayPorwal_CSE_2023.pdf";
+  const resumeUrl = "DhananjayPorwalSoftwareEngineering.pdf";
 
   // Trigger the download by creating an invisible anchor element
   const link = document.createElement("a");
   link.href = resumeUrl;
-  link.download = "DhananjayPorwal_CSE_2023.pdf"; // Change 'Your_Name_Resume.pdf' to the desired filename
+  link.download = "DhananjayPorwalSoftwareEngineering"; // Change 'Your_Name_Resume.pdf' to the desired filename
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
