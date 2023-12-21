@@ -121,6 +121,21 @@ for (let i = 0; i < filterBtn.length; i++) {
   });
 }
 
+// garden redirect button items
+document.addEventListener("DOMContentLoaded", function () {
+  // Get the button element by its ID
+  const openNotesBtn = document.getElementById("openNotesBtn");
+
+  // Add a click event listener
+  openNotesBtn.addEventListener("click", function () {
+    // Define the URL of the page you want to open
+    const notesPageUrl = "https://www.notes.dhananjayporwal.tech/"; // Replace this with your desired URL
+
+    // Open the link in another page
+    window.open(notesPageUrl, "_blank");
+  });
+});
+
 // contact form variables
 const form = document.querySelector("[data-form]");
 const formInputs = document.querySelectorAll("[data-form-input]");
