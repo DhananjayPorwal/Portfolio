@@ -817,6 +817,8 @@ main {
   margin-bottom: 30px;
 }
 
+
+
 /**
  * education and experience 
  */
@@ -895,6 +897,10 @@ main {
 
 .skills-list {
   padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  gap: 15px;
 }
 
 .skills-item:not(:last-child) {
@@ -1328,6 +1334,7 @@ textarea.form-input::-webkit-resizer {
   box-shadow: var(--shadow-3);
   z-index: 1;
   transition: var(--transition-1);
+  margin-bottom: 20px;
 }
 
 .form-btn::before {
@@ -1819,7 +1826,7 @@ textarea.form-input::-webkit-resizer {
 
   .form-btn {
     width: max-content;
-    margin-left: auto;
+   
   }
 }
 
