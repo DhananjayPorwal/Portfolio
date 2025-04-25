@@ -1176,6 +1176,12 @@ main {
   font-weight: var(--fw-300);
 }
 
+.blog-meta :is(.blog-star, time) {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
 .blog-meta .dot {
   background: var(--light-gray-70);
   width: 4px;
