@@ -1728,6 +1728,82 @@ textarea.form-input::-webkit-resizer {
   }
 }
 
+/* Resume PDF Section */
+.resume-pdf {
+  margin-bottom: 30px;
+}
+
+.pdf-container {
+  position: relative;
+  width: 100%;
+  background: var(--eerie-black-2);
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  box-shadow: var(--shadow-2);
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 85vh;
+  min-height: 700px;
+  border: none;
+  border-radius: 14px;
+  background: white;
+}
+
+.pdf-download-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Mobile responsive for PDF */
+@media (max-width: 768px) {
+  .pdf-viewer {
+    height: 70vh;
+    min-height: 500px;
+  }
+
+  .pdf-container {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 580px) {
+  .pdf-viewer {
+    height: 60vh;
+    min-height: 400px;
+  }
+
+  .pdf-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .pdf-viewer {
+    height: 50vh;
+    min-height: 350px;
+  }
+
+  .pdf-container {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pdf-viewer {
+    height: 45vh;
+    min-height: 300px;
+  }
+
+  .pdf-container {
+    padding: 5px;
+  }
+}
+
 /**
  * responsive larger than 768px screen
  */
@@ -2076,5 +2152,205 @@ textarea.form-input::-webkit-resizer {
 
   .timeline-text {
     max-width: 700px;
+  }
+}
+
+/* Resume PDF Section */
+.resume-pdf {
+  margin-bottom: 30px;
+}
+
+.pdf-container {
+  position: relative;
+  width: 100%;
+  /* background: var(--eerie-black-2); */
+  background: #1e1e1f;
+  border-radius: 14px;
+  padding: 20px;
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+
+.pdf-viewer {
+  width: 100%;
+  height: 85vh;
+  min-height: 700px;
+  border: 2px solid hsl(45, 100%, 71%);
+  border-radius: 14px;
+  background: white;
+}
+
+.pdf-download-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Mobile PDF Fallback */
+.desktop-pdf {
+  display: block;
+}
+
+.mobile-pdf-fallback {
+  display: none;
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--jet);
+  border-radius: 14px;
+  border: 2px solid hsl(45, 100%, 71%);
+}
+
+.pdf-preview-message {
+  color: var(--white-2);
+}
+
+.pdf-preview-message ion-icon {
+  font-size: 48px;
+  color: var(--orange-yellow-crayola);
+  margin-bottom: 20px;
+}
+
+.pdf-preview-message h3 {
+  color: var(--white-2);
+  margin-bottom: 15px;
+  font-size: var(--fs-3);
+}
+
+.pdf-preview-message p {
+  color: var(--light-gray);
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+.view-pdf-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--orange-yellow-crayola);
+  color: var(--smoky-black);
+  padding: 12px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: var(--fw-500);
+  transition: var(--transition-1);
+}
+
+.view-pdf-btn:hover {
+  background: var(--vegas-gold);
+  transform: translateY(-2px);
+}
+
+.view-pdf-btn ion-icon {
+  font-size: 16px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .desktop-pdf {
+    display: none;
+  }
+
+  .mobile-pdf-fallback {
+    display: block;
+  }
+
+  .pdf-container {
+    padding: 15px;
+  }
+
+  .pdf-preview-message {
+    padding: 30px 15px;
+  }
+
+  .pdf-preview-message ion-icon {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 580px) {
+  .desktop-pdf {
+    display: none;
+  }
+
+  .mobile-pdf-fallback {
+    display: block;
+  }
+
+  .pdf-container {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .resume-pdf {
+    margin-bottom: 20px;
+  }
+
+  .pdf-preview-message {
+    padding: 25px 10px;
+  }
+
+  .pdf-preview-message ion-icon {
+    font-size: 36px;
+  }
+}
+@media (max-width: 480px) {
+  .desktop-pdf {
+    display: none;
+  }
+
+  .mobile-pdf-fallback {
+    display: block;
+  }
+
+  .pdf-container {
+    padding: 8px;
+    border-radius: 10px;
+  }
+
+  .pdf-preview-message {
+    padding: 20px 8px;
+  }
+
+  .pdf-preview-message h3 {
+    font-size: var(--fs-4);
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar,
+  article {
+    width: 100% !important;
+    padding: 15px !important;
+  }
+
+  .pdf-viewer {
+    height: 50vh !important;
+    min-height: 280px !important;
+    max-height: 320px;
+  }
+
+  .pdf-container {
+    padding: 5px;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .pdf-viewer {
+    height: 45vh !important;
+    min-height: 250px !important;
+    max-height: 280px;
+  }
+}
+
+@media (max-width: 320px) {
+  .pdf-viewer {
+    height: 40vh !important;
+    min-height: 220px !important;
+    max-height: 250px;
+  }
+
+  .pdf-container {
+    padding: 3px;
   }
 }

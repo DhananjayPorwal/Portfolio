@@ -234,6 +234,10 @@
             </li>
 
             <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Journey</button>
+            </li>
+
+            <li class="navbar-item">
               <button class="navbar-link" data-nav-link>Portfolio</button>
             </li>
 
@@ -595,21 +599,72 @@
         </section>
         --></article>
 
+
         <!--
-        - MARK: #RESUME
-      -->
+          - MARK: #Resume
+        -->
 
         <article class="resume" data-page="resume">
           <header>
             <h2 class="h2 article-title">Resume</h2>
           </header>
+          <section class="resume-pdf">
+            <div class="pdf-container">
+              <!-- Desktop PDF Viewer -->
+              <iframe 
+                src="./DhananjayPorwalSoftwareEngineering.pdf#view=FitH&toolbar=1&navpanes=0&scrollbar=0" 
+                class="pdf-viewer desktop-pdf"
+                title="Dhananjay Porwal - Software Engineering Resume">
+                <p>Your browser does not support PDFs. 
+                  <a href="./DhananjayPorwalSoftwareEngineering.pdf" target="_blank">Download the PDF</a> to view it.
+                </p>
+              </iframe>
+              
+              <!-- Mobile Fallback -->
+              <div class="mobile-pdf-fallback">
+                <div class="pdf-preview-message">
+                  <ion-icon name="document-text-outline"></ion-icon>
+                  <h3>Resume Preview</h3>
+                  <p>PDF viewing is optimized for desktop. Please download to view the full resume on mobile.</p>
+                  <a href="./DhananjayPorwalSoftwareEngineering.pdf" 
+                     target="_blank" 
+                     class="view-pdf-btn">
+                    <ion-icon name="open-outline"></ion-icon>
+                    <span>Open PDF in New Tab</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            <div class="pdf-download-section">
+              <a href="./DhananjayPorwalSoftwareEngineering.pdf" 
+                 download="DhananjayPorwal_Resume.pdf" 
+                 class="form-btn" id="downloadBtn" data-form-btn>
+                <ion-icon name="document-outline"></ion-icon>
+                <span>Download Resume</span>
+              </a>
+            </div>
+          </section>
+        </article>
 
-          <section class="button-section">
+
+
+
+        <!--
+        - MARK: #JOURNEY
+      -->
+
+        <article class="journey" data-page="journey">
+          <header>
+            <h2 class="h2 article-title">Journey</h2>
+          </header>
+
+          <!-- <section class="button-section">
             <button class="form-btn" id="downloadBtn" disabled data-form-btn>
               <ion-icon name="document-outline"></ion-icon>
               <span>Download CV</span>
             </button>
-          </section>
+          </section> -->
 
           <!-- Experience -->
 
